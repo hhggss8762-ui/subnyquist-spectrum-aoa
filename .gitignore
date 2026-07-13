@@ -216,3 +216,36 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local environment and secrets
+.env
+.env.*
+.venv/
+venv/
+
+# IDE and system files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Large generated research data
+data/raw/
+data/processed/
+data/generated/
+
+# Experiment artifacts
+results/runs/
+logs/
+checkpoints/
+wandb/
+mlruns/
+
+# Model checkpoints
+*.pt
+*.pth
+*.ckpt
+
+# Temporary numerical data
+*.tmp
+*.cache
