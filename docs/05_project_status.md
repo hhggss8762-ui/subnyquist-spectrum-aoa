@@ -71,6 +71,14 @@
 - 比较唯一覆盖率、鲁棒间隔和采样成本；
 - 选出后续实验候选集合。
 
+**Completed (2026-07-15):** evaluated 1,662 low-rate and mandatory-control
+combinations on the 5 MHz × 2° grid. No combination met the initial A-class
+criterion (temporal ambiguity, joint unique coverage >= 90%, and spatial gain
+>= 5%). Spatial candidate reduction is observed mainly away from broadside;
+the current P0-3 judgement is **CONDITIONAL GO**. Formal artifacts are in
+`results/p0_3_sampling_rate_search/`; P0-4 may proceed only as a conditional
+Oracle-frequency diagnostic with temporal-only controls retained.
+
 ### P0-4 Baselines
 
 - Oracle frequency + phase/MUSIC；

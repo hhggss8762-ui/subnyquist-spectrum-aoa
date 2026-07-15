@@ -75,3 +75,46 @@
 - Figures:
 - Logs:
 - Model checkpoint:
+
+---
+
+## Experiment ID
+
+`20260715_p0_3_sampling_rate_search`
+
+### Objective
+
+Search for low-total-rate sets where temporal aliases remain non-unique while
+true-carrier ULA phase materially improves noiseless joint identifiability.
+
+### Code version
+
+- Git commit: `a7443ff3cfb8126b05f7cd21eab8e813de4cdad8` (recorded at run time)
+- Environment: `cnnaoa`, Python 3.11.15
+
+### Configuration
+
+- Config: `configs/p0_3_sampling_rate_search.yaml`
+- Frequency grid: 0.3–1.3 GHz, 5 MHz step; AoA grid: -60°–60°, 2° step
+- ULA: M=8, d=c/(2·1.3 GHz); noiseless single-source identifiability only
+- Search: 1,662 combinations (<=250 MHz budget plus mandatory P0-2 controls)
+
+### Results
+
+| Metric | Value |
+|---|---:|
+| A / B / C / D classes | 0 / 0 / 1,100 / 459 (103 unclassified) |
+| Pareto combinations | 23 |
+| Highest spatial gain | 27.73% (`35+75 MHz`), but joint coverage only 32.21% |
+
+### Decision
+
+- Continue / modify / stop: **CONDITIONAL GO**
+- Reason: spatial gain exists but does not yet yield an adequate main
+  configuration under the fixed array/FOV/grid; the gain is mainly off-broadside.
+- Next experiment: P0-4 Oracle-frequency AOA only as a diagnostic, retaining
+  temporal-only and C-class controls.
+
+### Artifacts
+
+- Raw results / figures / report: `results/p0_3_sampling_rate_search/`

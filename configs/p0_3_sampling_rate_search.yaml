@@ -1,0 +1,12 @@
+candidate_rates_mhz: [20, 25, 30, 32, 35, 40, 45, 48, 50, 60, 64, 75, 80, 96, 100]
+max_rates: 4
+max_total_rate_mhz: 250
+frequency_step_hz: 5000000
+angle_step_deg: 2
+joint_distance_alpha: 0.5
+nearest_frequency_count: 12
+category_a_temporal_max: 0.95
+category_a_joint_min: 0.90
+category_a_gain_min: 0.05
+category_a_resolve_min: 0.30
+category_d_joint_max: 0.80
