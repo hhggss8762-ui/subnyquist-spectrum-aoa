@@ -1,0 +1,22 @@
+Stage 0 P0-2 noiseless identifiability mapping
+
+This is a diagnostic comparison, not a final sampling-rate selection.
+Frequency grid: 0.3 to 1.3 GHz, step 5 MHz.
+AoA grid: -60 to 60 deg, step 2 deg.
+ULA: M=8, d=0.115304791538 m = c/(2*1.3 GHz).
+
+200 MHz
+  Temporal-only unique coverage: 0.00%
+  Joint unique coverage: 4.83%
+  Mean temporal candidates: 5.030
+  Mean joint candidates: 4.068
+200+250 MHz
+  Temporal-only unique coverage: 99.00%
+  Joint unique coverage: 99.41%
+  Mean temporal candidates: 1.010
+  Mean joint candidates: 1.006
+200+250+300 MHz
+  Temporal-only unique coverage: 100.00%
+  Joint unique coverage: 100.00%
+  Mean temporal candidates: 1.000
+  Mean joint candidates: 1.000
