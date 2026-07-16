@@ -85,6 +85,16 @@ Oracle-frequency diagnostic with temporal-only controls retained.
 - multi-rate hard recovery + MUSIC；
 - joint spatio-temporal candidate search。
 
+**P0-4 Oracle-frequency diagnostic completed (2026-07-16, exploratory Monte
+Carlo):** noiseless MUSIC/ESPRIT recovery, covariance fusion, CRB and
+frequency-mismatch experiments are implemented in
+`results/p0_4_oracle_doa/`. The 10-trial fixed-snapshot smoke sweep confirms
+that low frequency and endfire degrade AOA precision, while using an aliased
+frequency for the spatial manifold produces severe systematic error. This is
+not the planned 300-trial formal sweep; the judgement remains **CONDITIONAL
+GO** and P0-5 must use joint recovery rather than assume a hard frequency
+estimate is harmless.
+
 ### P0-5 Noise boundary
 
 - SNR：-20 至 20 dB；

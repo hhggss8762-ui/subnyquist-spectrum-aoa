@@ -10,3 +10,12 @@ no low-rate set reached both temporal ambiguity and at least 90% joint unique
 coverage; the present decision is therefore **CONDITIONAL GO**. Spatial phase
 does reduce candidates away from broadside, but it does not remove the severe
 broadside limitation on the specified grid.
+
+## Stage 0 P0-4 result
+
+P0-4 establishes the Oracle-frequency AOA diagnostic chain (MUSIC, ESPRIT,
+covariance fusion, CRB, and frequency-mismatch checks). The completed
+exploratory Monte-Carlo sweep confirms noiseless correctness and the predicted
+frequency-to-angle mismatch law, but it is not a replacement for the planned
+300-trial formal sweep. Current status remains **CONDITIONAL GO**; see
+`results/p0_4_oracle_doa/summary.md`.

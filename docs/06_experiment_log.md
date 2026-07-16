@@ -118,3 +118,44 @@ true-carrier ULA phase materially improves noiseless joint identifiability.
 ### Artifacts
 
 - Raw results / figures / report: `results/p0_3_sampling_rate_search/`
+
+---
+
+## Experiment ID
+
+`20260716_p0_4_oracle_doa_smoke`
+
+### Objective
+
+Isolate Oracle-frequency single-source AOA performance from time aliasing, and
+measure how an assumed carrier-frequency error propagates to AOA error.
+
+### Configuration
+
+- Config: `configs/p0_4_oracle_doa.yaml`
+- ULA: M=8, d=c/(2·1.3 GHz); frequency grid 0.3–1.3 GHz
+- Representative P0-3 rate sets plus 3.0 GHz Nyquist reference
+- Fixed-snapshot smoke: 1,620 parameter configurations × 10 trials × MUSIC
+  and ESPRIT = 32,400 estimator trials; this is exploratory, not the
+  300-trial run
+
+### Results
+
+| Metric | Value |
+|---|---:|
+| Noiseless MUSIC maximum error | 1.36e-05° |
+| Noiseless ESPRIT maximum error | 3.73e-14° |
+| Median mismatch theory-vs-MUSIC discrepancy | 0.0116° |
+| Median alias-frequency misuse absolute AOA error | 50.0° |
+
+### Decision
+
+- Continue / modify / stop: **CONDITIONAL GO**
+- Reason: Oracle AOA is correct and interpretable, but low frequency/endfire
+  degrade precision and the formal 300-trial confidence intervals remain open.
+- Next experiment: P0-5 should retain frequency–AOA joint handling; do not
+  use a hard sequential frequency estimate without its error tolerance.
+
+### Artifacts
+
+- Raw results / figures / report: `results/p0_4_oracle_doa/`
